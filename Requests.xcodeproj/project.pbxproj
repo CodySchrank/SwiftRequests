@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		82910AF11B1D29290039D786 /* Requests.h in Headers */ = {isa = PBXBuildFile; fileRef = 82910AF01B1D29290039D786 /* Requests.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82910AF71B1D29290039D786 /* Requests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82910AEB1B1D29290039D786 /* Requests.framework */; };
 		82910AFE1B1D29290039D786 /* RequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82910AFD1B1D29290039D786 /* RequestsTests.swift */; };
-		82910B081B1D296A0039D786 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82910B071B1D296A0039D786 /* Requests.swift */; };
+		82910B081B1D296A0039D786 /* RequestsFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82910B071B1D296A0039D786 /* RequestsFramework.swift */; };
+		82910B3A1B1D57250039D786 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82910B391B1D57250039D786 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,8 @@
 		82910AF61B1D29290039D786 /* RequestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RequestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82910AFC1B1D29290039D786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82910AFD1B1D29290039D786 /* RequestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsTests.swift; sourceTree = "<group>"; };
-		82910B071B1D296A0039D786 /* Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		82910B071B1D296A0039D786 /* RequestsFramework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsFramework.swift; sourceTree = "<group>"; };
+		82910B391B1D57250039D786 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82910B3A1B1D57250039D786 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +57,7 @@
 		82910AE11B1D29290039D786 = {
 			isa = PBXGroup;
 			children = (
+				82910B391B1D57250039D786 /* UIKit.framework */,
 				82910AED1B1D29290039D786 /* Requests */,
 				82910AFA1B1D29290039D786 /* RequestsTests */,
 				82910AEC1B1D29290039D786 /* Products */,
@@ -74,7 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				82910AF01B1D29290039D786 /* Requests.h */,
-				82910B071B1D296A0039D786 /* Requests.swift */,
+				82910B071B1D296A0039D786 /* RequestsFramework.swift */,
 				82910AEE1B1D29290039D786 /* Supporting Files */,
 			);
 			path = Requests;
@@ -112,7 +115,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82910AF11B1D29290039D786 /* Requests.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82910B081B1D296A0039D786 /* Requests.swift in Sources */,
+				82910B081B1D296A0039D786 /* RequestsFramework.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +329,8 @@
 		82910B021B1D29290039D786 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -335,15 +339,19 @@
 				INFOPLIST_FILE = Requests/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
 		82910B031B1D29290039D786 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -352,8 +360,10 @@
 				INFOPLIST_FILE = Requests/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

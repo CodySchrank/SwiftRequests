@@ -8,10 +8,6 @@
 		<data>
 		JsKtiw/cyhHWQIv/DaTPIDboCIs=
 		</data>
-		<key>Headers/Requests.h</key>
-		<data>
-		JIUe/L080r0gcZ3ZqUfzpAOpclk=
-		</data>
 		<key>Info.plist</key>
 		<data>
 		XZy3oAe6WldHPy+IiTuXhy2CTPI=
@@ -22,7 +18,7 @@
 		</data>
 		<key>Modules/Requests.swiftmodule/arm.swiftmodule</key>
 		<data>
-		L1wp8z5Y3WgX1X7gkx6l5yCFJYI=
+		bf2/z0w4pvKWauS1i9KNmZwboTM=
 		</data>
 		<key>Modules/Requests.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -30,11 +26,11 @@
 		</data>
 		<key>Modules/Requests.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Smr76oCSNwGnuHB5C5CInydC8Zs=
+		lQlRy+j9H5qe0ZIJSjxDgqtn9eE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		E5IVyNL/NCjET+PORBNFzxbQnD0=
+		Pa9DUj8Z4BcwMtheyMhidFLKGOM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -43,17 +39,13 @@
 		<data>
 		JsKtiw/cyhHWQIv/DaTPIDboCIs=
 		</data>
-		<key>Headers/Requests.h</key>
-		<data>
-		JIUe/L080r0gcZ3ZqUfzpAOpclk=
-		</data>
 		<key>Modules/Requests.swiftmodule/arm.swiftdoc</key>
 		<data>
 		A5cfRCPKMsyWB2Q4Qlj9QMAhqes=
 		</data>
 		<key>Modules/Requests.swiftmodule/arm.swiftmodule</key>
 		<data>
-		L1wp8z5Y3WgX1X7gkx6l5yCFJYI=
+		bf2/z0w4pvKWauS1i9KNmZwboTM=
 		</data>
 		<key>Modules/Requests.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -61,11 +53,11 @@
 		</data>
 		<key>Modules/Requests.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Smr76oCSNwGnuHB5C5CInydC8Zs=
+		lQlRy+j9H5qe0ZIJSjxDgqtn9eE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		E5IVyNL/NCjET+PORBNFzxbQnD0=
+		Pa9DUj8Z4BcwMtheyMhidFLKGOM=
 		</data>
 	</dict>
 	<key>rules</key>
