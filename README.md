@@ -12,11 +12,11 @@ To use:
     import Requests
 
     let server = Requests(server: "http://yourserverhere.com")
-``
+```
 
 
 For a GET request:
-```
+```swift
     server.getRequestWithReturnedArray(relativeUrl: "/yourUrlHere") {
         data in
         println(data)
@@ -27,9 +27,11 @@ relativeUrl is the url you want to send a request to, 'data' is returned from th
 
 
 For a POST request:
+```swift
     server.postRequestWithReturnedArray(relativeUrl: "/yourUrlHere", postData: ["key":"value"]) {
         data in
         println(data[0]["value"])
     }
+```
 postData is a [String:String] Dictionary, the first item is the key, the second is the value
 
