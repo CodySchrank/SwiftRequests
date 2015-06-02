@@ -13,7 +13,7 @@ To use:
 
     let server = Requests(server: "http://yourserverhere.com")
 ```
------
+-
 
 
 
@@ -25,7 +25,7 @@ For a GET request:
     }
 ```
 relativeUrl is the url you want to send a request to, 'data' is returned from that URL
------
+-
 
 
 
