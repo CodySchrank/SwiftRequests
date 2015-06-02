@@ -24,8 +24,8 @@ For a GET request:
         println(data)
     }
 ```
--
 relativeUrl is the url you want to send a request to, 'data' is returned from that URL
+
 -
 
 
@@ -37,10 +37,10 @@ For a POST request:
         println(data[0]["value"])
     }
 ```
-postData is a [String:String] Dictionary, the first item is the key, the second is the value
-You can post as many things as you need, like 
+postData is a [String:String] Dictionary, the first item is the key, the second is the value.
+You can post as many things as you need
 ```swift
-["name":"Michael","age":30,baller: true]
+["name":"Michael","age":30,"baller": true]
 ```
 
 
