@@ -24,7 +24,7 @@ For a GET request:
         println(data)
     }
 ```
-relativeUrl is the url you want to send a request to, 'data' is returned from that URL
+relativeUrl is the url you want to send a request to, 'data' is what was returned from that URL
 
 -
 
