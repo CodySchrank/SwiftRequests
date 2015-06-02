@@ -8,17 +8,20 @@ Used to create basic get and post requests and have a JSON Object returned
 
 
 To use:
+```swift
     import Requests
 
     let server = Requests(server: "http://yourserverhere.com")
-
+``
 
 
 For a GET request:
+```
     server.getRequestWithReturnedArray(relativeUrl: "/yourUrlHere") {
         data in
         println(data)
     }
+```
 relativeUrl is the url you want to send a request to, 'data' is returned from that URL
 
 
