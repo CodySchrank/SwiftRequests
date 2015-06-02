@@ -13,6 +13,8 @@ To use:
 
     let server = Requests(server: "http://yourserverhere.com")
 ```
+-----
+
 
 
 For a GET request:
@@ -23,6 +25,7 @@ For a GET request:
     }
 ```
 relativeUrl is the url you want to send a request to, 'data' is returned from that URL
+-----
 
 
 
@@ -34,4 +37,10 @@ For a POST request:
     }
 ```
 postData is a [String:String] Dictionary, the first item is the key, the second is the value
+You can post as many things as you need, like 
+```swift
+["name":"Michael","age":30,baller: true]
+```
+
+
 
