@@ -2,15 +2,11 @@
 Used to create basic get and post requests and have a JSON Object returned
 
 #Usage
-* Move the Requests.framework file to your project
-* Go to the xcode project file -> General -> Embedded Binaries
-    * Add Requests.framework
+* Move the RequestsFramework.swift file to your project
 
 
 To use:
 ```swift
-    import Requests
-
     let server = Requests(server: "http://yourserverhere.com")
 ```
 -
