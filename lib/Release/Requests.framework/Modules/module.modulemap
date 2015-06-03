@@ -1,0 +1,3 @@
+framework module Requests {
+    header "Requests-Swift.h"
+}
